@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title>A way to cultivate yourself simply about stars</title>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/menu_deroulant.css">
+	<link rel="icon" href="images/logoEt.ico" >
+
+	<style>
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		}
+
+	h2 {
+		text-align:center;
+		font-size:130%;
+	}
+
+	h3 { text-align: center;
+	}
+
+	h5 { 	text-align:center;
+		font-size:88%;
+	}
+
+	button { margin: 0 auto;
+		display:block;
+		 }
+
+	/* color of the band*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/*color of the text on the side bar*/
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* color of the test when click on it*/
+.sidebar a:hover {
+  color: white;
+}
+
+/*parameter of the "x"*/
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*size of the menu bar*/
+.openbtn {
+  font-size: 17px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+	</style>
+	</head>
+
+	<body>
+
+	<h3 style=  "text-align: center; background-color: lightblue;"> 11 Informations about stars that you didn't know about </h3><br>
+
+		<nav> 
+			<ul> 
+				
+				<li class="deroulant"><a href="#"> About Stars </a> 
+				<ul class="sous">
+					<li><a href="definitionStars.html">  Definition </a></li>
+					<li><a href="reality_def.html">  Stars, what are they in reality? </a></li>
+					<li><a href="tipsStars.html"> Tips </a></li>
+					<li><a href="worldOrigin.html"> World Origin </a></li>
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Examples </a>
+				<ul class="sous">
+					<li><a href="starsEx.html"> Stars  </a></li>
+					<li><a href="constellations.html"> Constellations  </a></li>
+					<!-- <li><a href="mapSky.html"> Sky Map </a></li>-->
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Quizz </a>
+			<ul class="sous">
+					<li><a href="quizz.html">  Quizz about stars, planets and universe</a></li>
+				</ul>
+	<!--		<li class="deroulant"><a href="#"> Contact us </a>
+			<ul class="sous">
+					<li><a href="contact.html"> Contact form <img src="images/mail.png" alt="Mail" class="right" width="35"/> </a></li>
+					<li><a href="#">  Instagram <img src="images/insta.png" alt="Instagram" class="right" width="25"/> </a></li>
+					<li><a href="#"> Facebook <img src="images/faceb.png" alt="Facebook" class="right" width="20"/> </a></li>
+					<li><a href="#"> LinkedIn <img src="images/ink.png" alt="LinkedIn" class="right" width="25"/> </a></li>
+				</ul>
+	-->
+
+				<li class="deroulant"><a href="canvas_sky2_jvs.html"> Profil </a></li>
+				<li class="deroulant"><a href="display.html"> Forms </a></li>
+			</ul>
+			
+		</nav>
+		<br>
+
+		<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+  <a href="menu2.html">Main page > </a>
+  <a href="definitionStars.html">Definition > </a>
+  <a href="reality_def.html">Stars, what are they in reality? > </a>
+  <!-- <a href="tipsStars.html">Tips > </a>-->
+  <a href="worldOrigin.html">Wolrd Origin > </a>
+  <a href="starsEx.html">Stars > </a>
+  <a href="constellations.html">Constellations > </a>
+  <a href="quizz.html">Quizz about stars, planets and universe > </a>
+  <a href="canvas_sky2_jvs.html">Profil > </a>
+  <a href="display.html">Forms > </a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";	//size of the menu bare
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+	<img src="images/stars1.png" alt="Starry Sky" class="center" style="width:300px;">
+
+	<div class="encadre" >
+
+
+	<h4> 1. There is different types of stars </h4><br>
+	<p style="text-align: justify;"> Not all stars are like our sun. In fact, astronomers have identified at least 12 types of stars, 11 of which are identified by a letter (O, B, A, F, G, K, M, R, N, T, Y). There are also 'groups of stars', which form the patterns we call constellations.
+Stars are classified according to their temperature, colour and brightness. For example, R, N, T and Y stars are cooler than O and B stars.</p>
+	
+	<br><h4> 2. All the stars we see in the sky are brighter and bigger than our sun </h4><br>
+	<p style="text-align: justify;"> If you were to choose a star in the night sky and travel as close to it as the sun, you would probably not be able to see our sun from that point. All the stars we can see now are both bigger and brighter than the sun.</p>
+
+	<br><h4> 3. Most stars move in groups </h4><br>
+	<p style="text-align: justify;"> Did you know that stars have friends? It's true! Many stars prefer to travel in groups in the universe. This is sometimes called binary stars, where two or more stars share the same centre of gravity. It would be like waking up one morning with two or more suns in the sky! </p>
+	
+	<br><h4> 4. Dwarf stars live longer than large, powerful stars </h4><br>
+	<p style="text-align: justify;"> Dwarf stars are smaller and less powerful than their giant counterparts, but this works in their favour. As the high energy of large stars is not sustainable, dwarf stars tend to live longer.</p>
+
+	<br><h4> 5. We can see only 2 000 stars in the sky </h4><br>
+	<p style="text-align: justify;"> If you look up at the sky on a dark, cloudless night, you might be inclined to think that you are looking at millions of stars. But in reality, we can only see about 2,000 stars at any given time. It is true that millions of stars exist in our universe, but the majority of them are too far away for us to see, and are not bright enough. </p>
+
+	<br><h4> 6. Stars don't really twinkle </h4><br>
+	<p style="text-align: justify;">We've all looked up at the sky to see a web of twinkling stars. You might be surprised to learn that the stars don't really twinkle. This is due to the Earth's atmosphere. Because starlight has to pass through many layers of the atmosphere, which has varying densities, it can create an illusion of twinkling.</p>
+
+	<br><h4> 7. All stars are made of the same components </h4> <br>
+	<p style="text-align: justify;"> Although there are different types and sizes of stars, they are all made of the same elements. Stars form from interstellar gas, mainly hydrogen molecules. When these clouds are pushed into a spinning motion, a small mass begins to form and continues to grow. The greater the gains, the hotter it becomes. And when it reaches the right temperature, nuclear fusion occurs and a star is born.</p>
+
+	<br><h4> 8. Our sun is a dwarf star </h4><br>
+	<p style="text-align: justify;"> We all know that our sun is a star, and we tend to think that it sets the standard for what a star should be. But on the whole, our sun is much smaller than most stars in the universe. In fact, it is considered a dwarf star, which tends to live longer and is less powerful than an ordinary star.</p>
+
+	<br><h4> 9. It would take 70 000 yeras to travel to the nearest star </h4><br>
+	<p style="text-align: justify;"> The nearest star to Earth is about 4.2 light years away. If you board the fastest spacecraft, it would take 70 000 years to reach it.</p>
+
+	<br><h4> 10. We see stars as they were in the past </h4><br>
+	<p style="text-align: justify;"> Because of the speed at which light travels, everything we see in the sky appears as it once did. For example, when we look at Alpha Centauri, which is the closest star to Earth after the Sun, we see how it appeared over four years ago. </p>
+
+	<br><h4> 11. The oldest sky map was designed in 1534 BC </h4><br>
+	<p style="text-align: justify;"> The Egyptians are credited with giving us our first accurate star chart. It dates back to over 1500 BC.</p>
+
+	<br>
+	<br>		
+</div>
+
+	<a href ="menu2.html" style="text-decoration: none;"> <p style=  "text-align: right;" > Here is to go to the main page </a><br><br>
+
+	<div class="horizontal_line"></div>
+
+	<marquee> For more informations another website will soon be available for the stars fans </marquee>
+	<marquee direction="right"
+		behavior="alternate">
+		</marquee>
+
+	<div id="footerContainer">
+	<p>
+	 <label>Designed by <a href="https://www.facebook.com/noemie.dussart.33/">Noemie Dussart</a></label>
+	 <span>Copyright 2022 Stars. All Rights Reserved</span>
+	</p>
+   </div>
+
+
+
+	</body>
+
+</html>

@@ -1,0 +1,303 @@
+/*Global Menu*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Bookman Old Style, sans-serif; /*style of the text for all the text*/
+}
+
+/* dynamic menu*/
+nav{
+    width: 95%; /*size of the color band*/
+    margin: 0 auto;
+    background-color: lightcyan; /*color of the band*/
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left; /*order of the choices*/
+    width: 20%; /*size for the choices to have on the color band*/
+    text-align: center; /*position of the text*/
+    position: relative;
+}
+
+/*make the color band to appear*/
+nav ul::after{
+    content: ""; 
+    display: block; 
+    clear: both;
+}
+
+nav a{
+    display: block;/*way of seing the menu*/
+    text-decoration: none; /*no line under the choices*/
+    color: black; /* color of the choices in the dynamic menu*/
+    border-bottom: 2px solid transparent;/*color of the line at the bottom of the dynamic menu*/
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: seagreen; /*color of the text when he need to be make*/
+    border-bottom: 2px solid green; /*color of the line when a choice is made*/
+}
+
+.sous{
+    display: none; /*hide the choices blocks*/
+    box-shadow: 0px 1px 2px #CCC; 
+    background-color: white; /*color behind the choices text*/
+    position: absolute; /*the choices are detached from the dynamic menu*/
+   /* width: 100%;*/
+    z-index: 1000; /*order of the choices*/
+}
+
+nav > ul li:hover .sous{
+    display: block; /*make the choices to appear as a list*/
+}
+.sous li{
+    width: 100%; /*position of the choices in the section*/
+    text-align: center; /*where the text is*/
+}
+.sous a{
+    padding: 10px; /*size of the carre where the choices are*/
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none; /*allow to not have another line on the choices*/
+    background-color: RGBa(200,200,200,0.1); /*color for the dynamic choices (when the mouse went on it to choose a section)*/
+}
+.deroulant > a::after{
+    content:" ▼"; /* help to see that there is options to defile*/
+    font-size: 13px; /*size of the symbol*/
+}
+
+/*container*/
+.conteneur{
+  margin: 1px 10px;
+  height: 1000px;
+}
+
+/*end ligne */
+.horizontal_line{
+	border-top: 1.5px dotted black;
+	line-height: 20%;
+	margin-left:50px;
+	margin-right: 50px; 	
+}
+
+/*End words*/
+
+#footerContainer {
+	background: whitesmoke; /* color on which the copyright is written */
+	/*height:50px;*/
+	line-height:50px; /*height of the color band*/
+	font-size:12px; /*size of the text*/
+	font-family:Georgia, "Times New Roman", Times, serif; /*police of the text*/
+	color:green; /*color of the text*/
+	
+}
+/* position of the text on the color band*/
+#footerContainer p{ /*container of the tags p */
+	margin:auto;
+	padding:0px 10px;
+}
+
+#footerContainer p label{
+	float:right;
+}
+/*color of the name of the designer*/
+#footerContainer p label a{
+	color:green;
+}
+/*color of the text when cliking one*/
+#footerContainer p label a:hover{
+	color:black;
+}
+
+
+/*the text is in the center of the page*/
+.login{
+	text-align: center;
+}
+
+/* sous comment*/
+/*size of the h2 text*/
+h2{
+	color: black;
+	margin-top:1px;
+	text-align: center
+}
+
+.com1{
+	margin-left:20px; 
+	float: right;
+}
+
+.com2{
+	margin-right:20px; 
+	float: right;
+}
+
+h7{
+	color: black;
+	margin-top:1px;
+	text-align: center;
+	font-family: Baguet Script;
+}
+	
+
+/* date website*/
+.sous_com{
+	margin-left: 20px; 
+	float: left;
+	font-size: 11.5px;
+	color: grey;
+}
+
+/*specifications of the text for the languages*/
+.langue_com{
+	margin-right: 20px; 
+	float: right;
+	font-size: 11.5px;
+	color: grey;
+}
+
+	
+/*table*/
+.invisible{
+	border: 0; /*the border are not visible*/	
+}
+
+/*citation*/
+p.quoteBar {
+	background:#F0F0F0;/*color behind the text*/
+	padding:5px;/*size of the color band*/
+	font-size:15px;/*size of the text*/
+	line-height:20px;
+	color:#3D3D3D; /*color of the text*/
+	
+	/*position of the text*/
+	margin-top:20px;
+	margin-bottom:20px;
+	font-style:italic; /*style of the text*/
+}
+
+/*marge*/
+p.marge{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.encadre{
+	margin: 30px 100px;/*position of the marges*/
+}
+
+
+/*center image*/
+.imageMarg{
+	text-align: center;
+}
+
+/*carre color*/
+#carre{
+	height: 190px; /*size*/
+	background: lavender; /*color*/
+}
+
+#carre2{
+	height: 190px; /*size*/
+	background: aliceblue; /*color*/
+}
+
+/* Principal page*/
+/* Putting text and picture next to each other*/
+/*is used to modify the dimensions of something*/
+.RecupTest{
+	display: flex;	
+}
+
+.com_1{	
+	flex: 4;
+}
+
+.com_2{	
+	flex: 30;
+}
+
+.com_3{	
+	flex: 15;
+	margin-right: 35px;
+}
+
+.com_4{
+	text-align: center;
+}
+
+.com_5{
+	flex: 2;
+}
+
+.com_6{
+	flex: 900px;
+}
+
+.com_7{
+	flex: 500px;
+}
+
+/* Contact forms for submiting a comment */
+
+.contactForm{
+	border-radius: 5px;
+	background-color: aliceblue;
+	padding: 20px;
+}
+
+
+/* Canvas part */
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+/* global marge on the page */
+.main {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+/* marge sur la page */
+.Gallery {
+  margin: 28px;
+}
+
+/* padding between each pictures*/
+.Gallery, .Gallery > .Pictures {
+  padding: 7px;
+}
+
+/* Create distinctives colums for pictures */
+.Pictures {
+  float: left;
+  width: 25%;
+}
+
+/* space between pictures */
+.Gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title> A way to cultivate yourself simply about stars </title>
+	<!-- section that allow the web page to be visible on the phone as well as on a laptop-->
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" >
+	 <link rel="stylesheet" href="css/menu_deroulant_version_assignment1.css"> 
+	 <link rel="icon" href="images/logoEt.ico" > <!-- icon fot the web site -->
+
+	<style>
+
+
+/* color of the band*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/*color of the text on the side bar*/
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* color of the test when click on it*/
+.sidebar a:hover {
+  color: white;
+}
+
+/*parameter of the "x"*/
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*size of the menu bar*/
+.openbtn {
+  font-size: 17px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+</style>	
+
+	
+</head>
+
+<body>
+	
+	
+	<h1 style=  "text-align: center; background-color: lightblue; font-family: Broadway; font-size: xx-large;">  A way to cultivate yourself simply about stars</h1> 
+
+<!------------------------------------------	DYNAMIC MENU IN CSS	-->
+
+	<br>
+		<nav> 
+			<ul> 
+				
+				<li class="deroulant"><a href="#"> About Stars </a> 
+				<ul class="sous">
+					<li><a href="definitionStars.html">  Definition </a></li>
+					<li><a href="reality_def.html">  Stars, what are they in reality? </a></li>
+					<li><a href="tipsStars.html"> Tips </a></li>
+					<li><a href="worldOrigin.html"> World Origin </a></li>
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Examples </a>
+				<ul class="sous">
+					<li><a href="starsEx.html"> Stars  </a></li>
+					<li><a href="constellations.html"> Constellations  </a></li>
+					<!-- <li><a href="mapSky.html"> Sky Map </a></li>-->
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Quizz </a>
+			<ul class="sous">
+					<li><a href="quizz.html">  Quizz about stars, planets and universe</a></li>
+				</ul>
+	<!--		<li class="deroulant"><a href="#"> Contact us </a>
+			<ul class="sous">
+					<li><a href="contact.html"> Contact form <img src="images/mail.png" alt="Mail" class="right" width="35"/> </a></li>
+					<li><a href="#">  Instagram <img src="images/insta.png" alt="Instagram" class="right" width="25"/> </a></li>
+					<li><a href="#"> Facebook <img src="images/faceb.png" alt="Facebook" class="right" width="20"/> </a></li>
+					<li><a href="#"> LinkedIn <img src="images/ink.png" alt="LinkedIn" class="right" width="25"/> </a></li>
+				</ul>
+	------------------------------------------------------------------------------------------------------------------------------------------------->
+
+				<li class="deroulant"><a href="canvas_sky2_jvs.html"> Profil </a></li>
+				<li class="deroulant"><a href="A2_register_form.html"> Forms </a>
+			<ul class="sous">
+					<!-- <li><a href="Forms_contact.html"> Registration Form</a></li>-->
+					<li><a href="display.html">Registration Form</a></li>
+					<li><a href="index.html"> View other register</a></li>
+					<li><a href="A2_register_form.html"> Register</a></li>
+					<li><a href="A2_forum_form.html"> Forum post</a></li>
+					
+				</li>
+			</ul>
+		</li>
+			
+		</nav>
+
+
+
+<!-- SIDEBAR -->
+	
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+  <a href="definitionStars.html">Definition > </a>
+  <ul class="deroul">
+  	<!-- <li><a href="#"> Definition </a></li> -->
+
+
+  <a href="reality_def.html">Stars, what are they in reality? > </a>
+  <a href="tipsStars.html">Tips > </a>
+  <a href="worldOrigin.html">Wolrd Origin > </a>
+  <a href="starsEx.html">Stars > </a>
+  <a href="constellations.html">Constellations > </a>
+  <a href="quizz.html">Quizz about stars, planets and universe > </a>
+  <a href="canvas_sky2_jvs.html">Profil > </a>
+  <a href="display.html">Forms > </a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";	//size of the menu bare
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<div class="conteneur"> 
+
+
+	<h3 style="font-family: Broadway; font-size: xx-large; text-align: center;"> A bit of History </h3> 
+	
+	<div class="horizontal_line"></div> <br> 
+
+<div class="sous_com"> <i>October 24, 2022 | Comments </i></div> 
+
+
+
+<div class="langue_com"> <select name="Langue"> 
+		<option value="Canada"> English </option>
+		<option value="Kenya"> French </option>
+		<option value="Chine"> Spanish </option>
+		<option value="France"> German </option>
+	</select>
+</div>
+
+
+<div class="encadre" >
+	
+
+
+<p style="text-align: center;" class="quoteBar" >Yesterday at the centre of the world, man will now be no more than a stardust among billions of galaxies. </p>
+
+
+<div class="RecupTest">
+
+
+<div class="com_1"> <img src="images/Hans.png" alt="Hans" class="right" width="100"/></div>
+<div class="com_2" align="justify"> <font size="7" color="maroon">M</font>ost historians attribute the invention of the telescope to <i>Hans Lip-pershey</i>, a Dutch spectacle maker. In 1608, he combined a convex and a concave lens to create the first telescope. The discovery of the telescope marks a fundamental step in human history. The celestial observations made possible by this instrument completely changed the way scientists had previously viewed the universe.</div>
+</div>
+
+
+<br>
+<p style="text-align: justify;"> On 2 October 1608, a Dutch optician, <i>Hans Lippershey</i>, filed a patent for a device that made it possible to "see distant things as if they were near". To do this, he placed two lenses in a tube, one at each end. The production of these spectacles was carried out in great numbers and the device was sold in Paris in April 1609. If the invention proved indispensable to the military for obvious reasons, it obviously did not take long for it to be turned towards the sky. </p>
+
+<br>
+
+<div class="RecupTest">
+
+<div class="com_3" align="justify"> <font size="7" color="maroon">S</font>ince the dawn of humanity, we have been observing the sky and trying to understand it. In the beginning we only had our eyes, but four centuries ago an instrument was born that revolutionised astronomy. This instrument consisted of lenses, pieces of glass or cut rock crystal whose properties had been known since antiquity.</div>
+<div class="com_4"> <img src="images/telescope.png" alt="telescope" style="text-align: center" width="200" /></div>
+
+</div>
+
+
+<br>
+
+<div class="RecupTest">
+
+<div class="com_5"> <img src="images/galileo.png" alt="Representation of an astre" class="right" width="150" /></div>
+<div class="com_6" align="justify"> <font size="7" color="maroon">T</font>he following year, <i>Galileo</i>, the Italian inventor, was the first to point a telescope of his own making at the heavens. His observations enabled him to discover the satellites of <i>Jupiter</i>, the mountains of the <i>Moon</i>, the phases of <i>Venus</i>, the spots on the <i>Sun</i> and countless stars invisible to the naked eye. After restating it, he sweeps aside the thesis of the imutability of the cosmos, formulated in antiquity by <i>Aristotle</i>. And, above all, he validates the <i>Copernican theory</i>, which holds that the Earth turn around the Sun and not the other way around.</div>
+
+</div>
+
+
+<br>
+<p style="text-align: justify;"> In parallel with his remarkable work in optics, the English physicist <i>Isaac Newton</i> developed a telescope in 1671 that revolutionised astronomical observation: the reflecting telescope. It consists of a concave primary mirror placed at the bottom of an open tube. An inverted image is thus observed at the bottom of the eyepiece. After <i>Newton</i>, the German <i>William Herschel</i> (1738-1822) observed numerous clusters and nebulae and studied the structure of the Milky Way, and the Irish <i>Lord Rosse</i> (1800-1867) discovered the spiral shapes of certain objects. </p>
+<br>
+<p style="text-align: justify;">From then on, modern astronomy, which in the 20th century led to the discovery of the <b>Big Bang</b> (the original explosion that created a continuously expanding universe), took off thanks to the telescope. </p>
+
+</div>
+
+
+
+<br>
+	<div class="horizontal_line"></div>
+
+	
+	<marquee> For more informations another website will soon be available for the stars fans </marquee>
+	
+
+	<div id="footerContainer"> 
+	<p>
+	 <label>Designed by <a href="https://www.facebook.com/noemie.dussart.33/">Noemie Dussart</a></label>
+	 <p>Copyright 2022 Stars. All Rights Reserved</p>
+	</p>
+   </div>
+
+  
+
+
+</body>
+</html>
+
+
+		

@@ -1,0 +1,304 @@
+
+
+<!doctype html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/display.js"></script>
+    
+    <style>
+    body{
+		font-family: Bookman Old Style;
+		/*padding: 20px;*/
+		background-color: #f1f1f1;
+	}
+
+	.container{
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+		
+	}
+
+	.container2{
+		text-align: left;
+	}
+
+	#carre{
+		/*height: 300px; /*size*/
+		background: lavender; /*color*/
+		margin-right: 150px;
+		margin-left: 150px;
+		/*margin-top:3px;*/
+
+	}
+
+	.table{
+		max-width: 1000px;
+		margin: auto;
+	}
+	
+	.row{
+		margin: 8px -16px;
+	}
+
+
+	.column{
+		float: left;
+		width: 25%;
+	}
+
+	/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+	/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+	  .column {
+	    width: 100%;
+	  }
+	}
+	
+	/***********SIDEBAR MENU************/
+	
+	/* color of the band*/
+	.sidebar {
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: lightblue;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  padding-top: 60px;
+	}
+	
+	/*color of the text on the side bar*/
+	.sidebar a {
+	  padding: 8px 8px 8px 32px;
+	  text-decoration: none;
+	  font-size: 17px;
+	  color: black;
+	  display: block;
+	  transition: 0.3s;
+	}
+	
+	/* color of the test when click on it*/
+	.sidebar a:hover {
+	  color: white;
+	}
+	
+	/*parameter of the "x"*/
+	.sidebar .closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 25px;
+	  font-size: 36px;
+	  margin-left: 50px;
+	}
+	
+	/*size of the menu bar*/
+	.openbtn {
+	  font-size: 17px;
+	  cursor: pointer;
+	  background-color: #111;
+	  color: white;
+	  padding: 10px 15px;
+	  border: none;
+	}
+	
+	.openbtn:hover {
+	  background-color: #444;
+	}
+	
+	#main {
+	  transition: margin-left .5s;
+	  padding: 16px;
+	}
+	
+	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+	@media screen and (max-height: 450px) {
+	  .sidebar {padding-top: 15px;}
+	  .sidebar a {font-size: 18px;}
+	}
+	
+	.central{
+		margin-left: 500px;
+	}
+    	
+    
+    </style>
+    
+    
+</head>
+<body>
+
+<h1 id="registration" style="text-align: center; font-family: Broadway; background-color: lightblue;">Registration Form</h1>
+				<hr>
+				
+				<!----------SIDEBAR MENU----------->	
+
+		<div id="mySidebar" class="sidebar">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">-</a>
+		
+		  <a href="menu2.html">Main page > </a>
+		  <a href="definitionStars.html">Definition > </a>
+		  <a href="reality_def.html">Stars, what are they in reality? > </a>
+		  <a href="tipsStars.html">Tips > </a>
+		  <a href="worldOrigin.html">Wolrd Origin > </a>
+		  <a href="starsEx.html">Stars > </a>
+		  <a href="constellations.html">Constellations > </a>
+		  <a href="quizz.html">Quizz about stars, planets and universe > </a>
+		  <a href="canvas_sky2_jvs.html">Profil > </a>
+		  <!-- <a href="A2_register_form.html">Forms > </a> -->
+		</div>
+		
+		<div id="main">
+		  <button class="openbtn" onclick="openNav()"> + Menu</button>  
+		</div>
+		
+		<script>
+		function openNav() {
+		  document.getElementById("mySidebar").style.width = "250px";	//size of the menu bare
+		  document.getElementById("main").style.marginLeft = "250px";
+		}
+		
+		function closeNav() {
+		  document.getElementById("mySidebar").style.width = "0";
+		  document.getElementById("main").style.marginLeft= "0";
+		}
+		</script>
+
+<!--  
+
+<div>
+    <button style="display: block" type="button" id="lectures3">View the Sign Up</button>
+</div>
+<div>
+    <table id="lectures3_table" border='1' style="display: none">
+        <tr>
+            <th>Week</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+    </table>
+
+</div>
+-->
+
+<div class="central">
+
+<button style="display: block" type="button" id="addLecture" >Add your Sign Up</button>
+
+<form id="addLectureForm" style= "display: none" name="lectureAdd" method="POST" >
+
+
+
+    <input id="id" type="text" value="">
+    <label for="id">Id</label><br>
+    
+    <input id="name" type="text" value="**">
+    <label for="name">Name</label><br>
+    
+    <input id="email" type="text" value="**">
+    <label for="email">Email</label><br>
+    
+	
+    <input id="address" type="text" value="**">
+    <label for="address">Address</label><br>
+    
+    
+    <input name="submit" type="submit">
+    <input type="reset" value="reset" class="btn btn-outline-danger">
+</form>
+</div>
+
+<br>
+
+<div class="table">
+
+				<div class="row">
+					<div class="column">
+
+						<div class="card">
+						
+							<div class="student-details">
+								<div class="std-name">Noemie Dussart </div>
+								
+								<div class="std-email"><i>nono@dcu.ie</i></div>
+								<div class="std-country">France</div>
+								
+								
+							</div>
+							<div class="div-remove-card">
+								<button class="remove-card">--------------</button>
+							</div>
+						</div><!--card-->
+					</div><!--column-->
+										
+				
+					<div class="column">
+
+						<div class="card">
+						
+							<div class="student-details">
+								<div class="std-name">Justine Marret </div>
+								
+								<div class="std-email"><i>juju@dcu.ie</i></div>
+								<div class="std-country">France</div>
+								
+							</div>
+							<div class="div-remove-card">
+								<button class="remove-card">--------------</button>
+							</div>
+						</div><!--card-->
+					</div><!--column-->
+
+					<div class="column">
+
+						<div class="card">
+						
+							<div class="student-details">
+								<div class="std-name">Thomas Beghini </div>
+								
+								<div class="std-email"><i>toto@dcu.ie</i></div>
+								<div class="std-country">France</div>
+								
+							</div>
+							<div class="div-remove-card">
+								<button class="remove-card">--------------</button>
+							</div>
+						</div><!--card-->
+					</div><!--column-->
+
+					<div class="column">
+
+						<div class="card">
+						
+							<div class="student-details">
+								<div class="std-name">Adrien Smith </div>
+								
+								<div class="std-email"><i>ade@dcu.ie</i></div>
+								<div class="std-country">France</div>
+								
+							</div>
+							<div class="div-remove-card">
+								<button class="remove-card">--------------</button>
+							</div>
+						</div><!--card-->
+					</div><!--column-->
+
+				
+				</div><!--row-->
+
+			</div><!--table-->
+</body>
+
+</html>
+

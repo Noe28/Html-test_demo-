@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title>A way to cultivate yourself simply about stars</title>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<link rel="stylesheet" href="css/menu_deroulant_version_assignment1.css">
+	<link rel="icon" href="images/logoEt.ico" >
+
+	<style>
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		}
+
+	h2 {
+		text-align:center;
+		font-size:130%;
+	}
+
+	h3 { text-align: center;
+	}
+
+	h5 { 	text-align:center;
+		font-size:88%;
+	}
+
+	button { margin: 0 auto;
+		display:block;
+		 }
+
+	th, td{
+		border: 2px solid green; /* color the border of the table */
+		padding: 15px;
+	}
+
+	/********CSS OF THE DYNAMIC MENU*******/
+
+	/* color of the band*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  overflow-x: hidden;	/*menu is hidden when the user doesn't click on it*/
+  transition: 0.5s;
+  padding-top: 60px;/*space at the top of the bar for the elements*/
+}
+
+/*color of the text on the side bar*/
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  transition: 0.3s;/*transition of the element when the mouse is on it*/
+}
+
+/* color of the test when click on it*/
+.sidebar a:hover {
+  color: white;
+}
+
+/*parameter of the "x"*/
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  /*position of the cross*/
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*size of the menu bar*/
+.openbtn {
+  font-size: 17px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+	</style>
+	</head>
+
+	<body>
+
+	<h3 style=  "text-align: center; background-color: lightblue;"> Informations about constellations </h3><br>
+
+		<nav> 
+			<ul> 
+				
+				<li class="deroulant"><a href="#"> About Stars </a> 
+				<ul class="sous">
+					<li><a href="definitionStars.html">  Definition </a></li>
+					<li><a href="reality_def.html">  Stars, what are they in reality? </a></li>
+					<li><a href="tipsStars.html"> Tips </a></li>
+					<li><a href="worldOrigin.html"> World Origin </a></li>
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Examples </a>
+				<ul class="sous">
+					<li><a href="starsEx.html"> Stars  </a></li>
+					<li><a href="constellations.html"> Constellations  </a></li>
+					<!-- <li><a href="mapSky.html"> Sky Map </a></li>-->
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Quizz </a>
+			<ul class="sous">
+					<li><a href="quizz.html">  Quizz about stars, planets and universe</a></li>
+				</ul>
+	<!--		<li class="deroulant"><a href="#"> Contact us </a>
+			<ul class="sous">
+					<li><a href="contact.html"> Contact form <img src="images/mail.png" alt="Mail" class="right" width="35"/> </a></li>
+					<li><a href="#">  Instagram <img src="images/insta.png" alt="Instagram" class="right" width="25"/> </a></li>
+					<li><a href="#"> Facebook <img src="images/faceb.png" alt="Facebook" class="right" width="20"/> </a></li>
+					<li><a href="#"> LinkedIn <img src="images/ink.png" alt="LinkedIn" class="right" width="25"/> </a></li>
+				</ul>
+	-->
+
+				<li class="deroulant"><a href="canvas_sky2_jvs.html"> Profil </a></li>
+				<li class="deroulant"><a href="display.html"> Forms </a></li>
+			</ul>
+			
+		</nav>
+		<br>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a><!--- when the user click on the cross the menu close itself-->
+
+  <a href="menu2.html">Main page > </a>
+  <a href="definitionStars.html">Definition > </a>
+  <a href="reality_def.html">Stars, what are they in reality? > </a>
+  <a href="tipsStars.html">Tips > </a>
+  <a href="worldOrigin.html">Wolrd Origin > </a>
+  <a href="starsEx.html">Stars > </a>
+  <!-- <a href="constellations.html">Constellations > </a>-->
+  <a href="quizz.html">Quizz about stars, planets and universe > </a>
+  <a href="canvas_sky2_jvs.html">Profil > </a>
+  <a href="display">Forms > </a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";	//size of the menu bare
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+	
+
+	<div class="encadre" >
+
+
+<table>		
+		<tr>
+			<td class="invisible"> 
+<table>
+			<tr> 
+				<th> Constellations </th>
+				<th> Pictures </th>
+			</tr>
+
+			<tr>
+				<td> Balance &ensp; &ensp; &ensp;</td>
+				<td> <img src="images/constellation/balance.png" alt="Representation of Balance" class="center" ></td>
+			</tr>
+
+			</tr>
+				<td>Cancer</td>
+				<td> <img src="images/constellation/cancer.png" alt="Representation of polaris" class="center" ></td>
+
+			</tr>
+
+			<tr>
+				<td>Vierge</td>
+				<td> <img src="images/constellation/vierge.png" alt="Representation of polaris" class="center"></td>
+
+			</tr>
+
+			<tr>
+				<td>Centaure</td>
+				<td> <img src="images/constellation/centaure.png" alt="Representation of polaris" class="center"></td>
+
+			</tr>
+
+			<tr>
+				<td>Cygne</td>
+				<td> <img src="images/constellation/cygne.png" alt="Representation of polaris" class="center"></td>
+			</tr>	
+
+			<tr>
+				<td>Dragon</td>
+				<td> <img src="images/constellation/dragon.png" alt="Representation of polaris" class="center"></td>
+
+			</tr>
+
+
+		</table>
+	</td>
+
+						
+				<td class="invisible"> <!-- <img src="images/carteCiel.png" alt="Representation of the Constellations" class="center">
+
+
+					-->
+
+				<div id="conteneur_image">
+  				<img src="images/carteCiel.png" id="img_original">
+  				<div id="img_zoom"></div>
+				</div>
+
+
+
+				
+				</td>
+			
+			
+			
+		</tr>
+	</table>
+
+<br>
+
+<div class="RecupTest">
+
+	<div class="com_5"> <img src="images/other_constellations.png" alt="Representation of other types of constellations" width="250"></div>
+	<div class="com_7" align="justify"> <font size="7" color="maroon">W</font>hat is a constellation? It is simply a grouping of stars which, in ancient times, were linked to mythical figures such as gods and legendary heroes. Constellations help us to delineate the sky in well-defined areas, in short, to create a map. This makes it easier to locate a particular object, planet or star in deep space. Amateur astronomers today use a mixture of ancient and modern constellations.
+	</div>
+
+	</div>
+
+<br>
+
+<b> Names and denominations of stars </b><br>
+<br>
+
+<p align="justify"> There are bright stars that have been called by various names by different civilisations. The names that have survived to the present day are mainly due to the Arabs and Greeks. Some examples of the most popular stars are Sirius in the constellation Can Mayor, Polaris or the North Star in the constellation Ursa Minor, or Alnilam, Alnitak and Mintaka which are the three stars that form the belt of Orion (also called the "3 kings"). </p>
+<br>
+
+<p align="justify"> For this reason, there are star naming systems that allow us to name and identify stars more easily. One of the most popular and widely used among amateur astronomers is the one created by the German astronomer <b>Johannes Bayer</b>. It consists of the following: it ranks the stars in a constellation from brightest to darkest using the names of the letters of the Greek alphabet.</p>
+<br>
+
+<p align="justify">For example, the brightest is called alpha, followed by beta, then gamma, and so on. He then adds the Latin genitive according to the constellation to which it belongs. For example, the brightest star in the constellation Sagittarius would be Alpha Sagitarii, the second brightest star in the constellation Orion would be Beta Orioni, etc. This makes it easier to name and refer to the stars in a constellation.</p>
+
+
+	<br>	
+	</div>	
+
+	<a href ="menu2.html" style="text-decoration: none;"> <p style=  "text-align: right;" > Here is to go to the main page </a><br><br>
+
+	<div class="horizontal_line"></div>
+
+	<marquee> For more informations another website will soon be available for the stars fans </marquee>
+	<marquee direction="right"
+		behavior="alternate">
+		</marquee>
+
+	<div id="footerContainer">
+	<p>
+	 <label>Designed by <a href="https://www.facebook.com/noemie.dussart.33/">Noemie Dussart</a></label>
+	 <span>Copyright 2022 Stars. All Rights Reserved</span>
+	</p>
+   </div>
+
+
+   <!-------------LOOP FUNCTION---------------->
+
+   <script>
+let loupe = function (){
+  document.querySelector('#conteneur_image').addEventListener('mousemove', function(e) {
+  
+    let image_original = document.querySelector('#img_original'),
+        image_zoom = document.querySelector('#img_zoom'),
+        style = image_zoom.style,
+        x = e.pageX - this.offsetLeft,
+        y = e.pageY - this.offsetTop,
+        imgWidth = image_original.offsetWidth,
+        imgHeight = image_original.offsetHeight,
+        xpourcentage = ((x/imgWidth) * 100),
+        ypourcentage = ((y/imgHeight) * 100);
+
+    if(x > (.01 * imgWidth)) {
+      xpourcentage += (.15 * xpourcentage);
+    };
+
+    if(y >= (.01 * imgHeight)) {
+      ypourcentage += (.15 * ypourcentage);
+    };
+
+    style.backgroundPositionX = (xpourcentage - 9) + '%';
+    style.backgroundPositionY = (ypourcentage - 9) + '%';
+
+    style.left = (x - 80) + 'px';
+    style.top = (y - 80) + 'px';
+
+  }, false);
+}();
+
+</script>
+
+
+</body>
+
+
+
+</head>

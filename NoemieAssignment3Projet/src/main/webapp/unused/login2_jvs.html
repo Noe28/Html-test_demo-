@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title> A way to cultivate yourself simply about stars </title>
+	<!-- section that allow the web page to be visible on the phone as well as on a laptop-->
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" >
+	<link rel="stylesheet" href="css/menu2_jvs.css"> <!-- css file -->
+	<link rel="icon" href="images/logoEt.ico" > <!-- icon fot the web site -->
+
+	<style>
+	
+/* Add styles to the form container */
+.box {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px; /*size of the login boxe*/
+  background-color: white; /*color of the login boxe*/
+  text-decoration: none;
+  border:  black;
+}
+
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+	<!-- Login part -->
+	<br>
+	<form class="box">
+		<h1 style="text-align: center;">Login</h1>
+	
+	<label for="name">Name</label>
+    <input type="name" placeholder="Enter yout Name">
+
+    <br><br>
+
+	<label for="psw">Password</label>
+    <input type="password" placeholder="Enter Password"><br><br>
+
+
+	<script type="text/javascript">
+   function ValiderMail(formulaire) {
+      if (formulaire.mail.value.indexOf("@dcu.ie",0)<0) {alert("Enter a valid e-mail address from the type name@dcu.ie.\nThe form is not valid.")}
+      else {
+         alert("Validate Forms.");
+      }
+   }
+
+</script>
+
+
+<form name="valid" action="">
+   Enter your e-mail adress: 
+ 
+   <input type="texte" name="mail">
+   <input type="button" name="bouton" value="Valider" onclick="ValiderMail(this.form)">
+</form>
+
+</form>
+
+</body>
+</html>

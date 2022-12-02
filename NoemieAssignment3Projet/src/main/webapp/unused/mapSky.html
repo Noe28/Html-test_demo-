@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title> A way to cultivate yourself simply about stars</title>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css2/canva.css">
+
+	
+
+</head>
+
+<body>
+
+
+	<div class="font">
+
+    <nav>
+      
+      <ul>
+
+        <li><a href="menu2.html">Home</a></li>
+
+        <li class="deroulant"><a href="#">Contact</a>
+          <ul class="sous">
+            <li><a href="#">INSTA </a></li>
+            <li><a href="#">FACEBOOK </a></li>
+            <li><a href="#">LINKEDIN </a></li>
+          </ul>
+        </li>
+
+         <li><a href="#">Services</a></li> 
+      </ul>
+    <img src="images/profil2.png" class="menu" width="60" onclick="toggleMenu()">
+
+    <div class="sub-menu-wrap" id="subMenu">
+      <div class="sub-menu">
+        <div class="user-info">
+          <img src="images/menu.png" width="40">
+          <h3> Noemie Dussart </h3>
+        </div>
+          <hr>
+          <a href="#" class="sub-menu-link">
+            <p> Edit profil </p>
+            <span>></span>
+          </a>
+          
+          <a href="contact.html" class="sub-menu-link">
+            <p> Contact Form </p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <p> Logout </p>
+            <span>></span>
+          </a>        
+          
+        </div>
+      </div>
+      </div>
+    </div>
+
+    </nav>
+  </div>
+ 
+
+<script>
+
+  
+    subMenu.getElementById('subMenu');
+
+    function toggleMenu(){
+      subMenu.classList.toggle("open-menu");
+
+  }
+
+  
+  
+
+</script>
+
+<br><br>
+
+<div class="encadre">
+
+<div class="RecupTest">	
+
+	<div class="come_1"><div id="conteneur_image">
+  <img src="images/carteCiel.png" id="img_original">
+  <div id="img_zoom"></div>
+</div></div>
+<br>
+<div class="come_2" align="justify"> In 1608, he combined a convex and a concave lens to create the first telescope. The discovery of the telescope marks a fundamental step in human history. The celestial observations made possible by this instrument completely changed the way scientists had previously viewed the universe.</div>
+</div>
+
+</div>
+
+
+<script>
+let loupe = function (){
+  document.querySelector('#conteneur_image').addEventListener('mousemove', function(e) {
+  
+    let image_original = document.querySelector('#img_original'),
+        image_zoom = document.querySelector('#img_zoom'),
+        style = image_zoom.style,
+        x = e.pageX - this.offsetLeft,
+        y = e.pageY - this.offsetTop,
+        imgWidth = image_original.offsetWidth,
+        imgHeight = image_original.offsetHeight,
+        xpourcentage = ((x/imgWidth) * 100),
+        ypourcentage = ((y/imgHeight) * 100);
+
+    if(x > (.01 * imgWidth)) {
+      xpourcentage += (.15 * xpourcentage);
+    };
+
+    if(y >= (.01 * imgHeight)) {
+      ypourcentage += (.15 * ypourcentage);
+    };
+
+    style.backgroundPositionX = (xpourcentage - 9) + '%';
+    style.backgroundPositionY = (ypourcentage - 9) + '%';
+
+    style.left = (x - 80) + 'px';
+    style.top = (y - 80) + 'px';
+
+  }, false);
+}();
+
+</script>
+
+
+
+<br>	
+	</div>	
+	<a href ="menu2.html"> <p style=  "text-align: right;"> Here is to go to the main page </a><br><br>
+
+	<div class="horizontal_line"></div>
+
+	<marquee> For more informations another website will soon be available for the stars fans </marquee>
+	<marquee direction="right"
+		behavior="alternate">
+		</marquee>
+
+	<div id="footerContainer">
+	<p>
+	 <label>Designed by <a href="https://www.facebook.com/noemie.dussart.33/">Noemie Dussart</a></label>
+	 <span>Copyright 2022 Stars. All Rights Reserved</span>
+	</p>
+   </div>
+
+
+
+</body>
+</html>

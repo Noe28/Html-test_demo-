@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title> A way to cultivate yourself simply about stars</title>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/menu2_jvs.css">
+
+  <style>
+    html { 
+  background: url(images/ocean_login_page_jvs.png) no-repeat center fixed; 
+  background-size: cover;
+}
+
+  /* Add styles to the form container */
+.box {
+  position: absolute;
+  left: 0;
+  margin: 10px;
+  max-width: 260px;
+  padding: 2px; /*size of the login boxe*/
+  background-color: white; /*color of the login boxe*/
+  text-decoration: none;
+  
+}
+
+
+</style>	
+
+</head>
+
+<body>
+
+	<nav>
+  <div class="logo">
+      <h3>A way to cultivate yourself simply about stars</h3>
+      <hr>
+  </div>
+  <ul class="nav-links"> 
+      <a href="menu2.html">Home</a>
+      
+      
+     <a href="#">Products</a> 
+
+  </ul>
+  <!-- used for little display -->
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+
+</nav>
+
+<!-- Login part -->
+  <br>
+  <form class="box">
+    <h1 style="text-align: center;">Login</h1>
+  
+  <label for="name">Name</label>
+    <input type="name" placeholder="Enter yout Name">
+
+    <br><br>
+
+  <label for="psw">Password</label>
+    <input type="password" placeholder="Enter Password"><br><br>
+
+
+  <script>
+   function ValiderMail(formulaire) {
+      if (formulaire.mail.value.indexOf("@dcu.ie",0)<0) {alert("Enter a valid e-mail address from the type name@dcu.ie.\nThe form is not valid.")}
+      else {
+         alert("Validate Forms.");
+      }
+   }
+
+ </script>
+
+ <form name="valid" action="">
+   Enter your e-mail adress: 
+ 
+   <input type="texte" name="mail">
+   <input type="button" name="bouton" value="Verify" onclick="ValiderMail(this.form)">
+   <button> <a href="menu2.html" style="text-decoration: none; color: green;"> ☑ </a>
+</form>
+
+</form>
+
+
+<!-- <img src="images/ocean_login_page_jvs.png" > -->
+
+
+
+<!-- JAVASCRIPT APPLICATION -->
+<script>
+
+const navSlide = () => {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
+
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0.5
+        }s `;
+      }
+    });
+    burger.classList.toggle("toggle");
+  });
+  //
+};
+
+navSlide();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title> A way to cultivate yourself simply about stars</title>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" >
+	<link rel="stylesheet" href="css/menu_deroulant_version_assignment1.css">
+	<link rel="icon" href="images/logoEt.ico" >
+
+<style>
+	
+	/* color of the band*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/*color of the text on the side bar*/
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* color of the test when click on it*/
+.sidebar a:hover {
+  color: white;
+}
+
+/*parameter of the "x"*/
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*size of the menu bar*/
+.openbtn {
+  font-size: 17px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+	
+	<h3 style=  "text-align: center; background-color: lightblue;"> All you want to know about stars on videos </h3> <br>
+	<nav> 
+			<ul> 
+				
+				<li class="deroulant"><a href="#"> About Stars </a> 
+				<ul class="sous">
+					<li><a href="definitionStars.html">  Definition </a></li>
+					<li><a href="reality_def.html">  Stars, what are they in reality? </a></li>
+					<li><a href="tipsStars.html"> Tips </a></li>
+					<li><a href="worldOrigin.html"> World Origin </a></li>
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Examples </a>
+				<ul class="sous">
+					<li><a href="starsEx.html"> Stars  </a></li>
+					<li><a href="constellations.html"> Constellations  </a></li>
+					<!-- <li><a href="mapSky.html"> Sky Map </a></li>-->
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Quizz </a>
+			<ul class="sous">
+					<li><a href="quizz.html">  Quizz about stars, planets and universe</a></li>
+				</ul>
+	<!--		<li class="deroulant"><a href="#"> Contact us </a>
+			<ul class="sous">
+					<li><a href="contact.html"> Contact form <img src="images/mail.png" alt="Mail" class="right" width="35"/> </a></li>
+					<li><a href="#">  Instagram <img src="images/insta.png" alt="Instagram" class="right" width="25"/> </a></li>
+					<li><a href="#"> Facebook <img src="images/faceb.png" alt="Facebook" class="right" width="20"/> </a></li>
+					<li><a href="#"> LinkedIn <img src="images/ink.png" alt="LinkedIn" class="right" width="25"/> </a></li>
+				</ul>
+	-->
+
+				<li class="deroulant"><a href="canvas_sky2_jvs.html"> Profil </a></li>
+				<li class="deroulant"><a href="display.html"> Forms </a></li>
+				</li>
+			</ul>
+</li>
+			
+			
+		</nav>
+		<br>
+
+	<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+  <a href="menu2.html">Main page > </a>
+  <a href="definitionStars.html">Definition > </a>
+  <a href="reality_def.html">Stars, what are they in reality? > </a>
+  <a href="tipsStars.html">Tips > </a>
+  <!-- div>/a href="worldOrigin.html">Wolrd Origin > </a> -->
+  <a href="starsEx.html">Stars > </a>
+  <a href="constellations.html">Constellations > </a>
+  <a href="quizz.html">Quizz about stars, planets and universe > </a>
+  <a href="canvas_sky2_jvs.html">Profil > </a>
+  <a href="display.html">Forms > </a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";	//size of the menu bare
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+	<div class="encadre" >
+
+	<p> In this page you, the reader, can access several choices of videos found on <i>youtube</i>. These will give you all the additional information you need about the formation of stars, their nature etc... </p>
+
+	<br><div class="horizontal_line"></div>
+
+	
+<!-- the informations are placed in an invisible table to put them in order --> 
+
+	<br><br>
+	<table>		
+		<tr>
+			<td class="invisible"><iframe src="https://www.youtube.com/embed/bCIEYUeXll8"frameborder="0" allowfullscreen></iframe></td> <!-- link for a youtube video -->
+			<td class="invisible"> <div class="com1" align="justify"> <font size="7" color="cadetblue"> I</font>n this 12min video, you will learn what led Galileo to develop the first telescope, and what he saw in it.  </div> </td>
+		</tr>
+	</table>
+
+	<br><div class="horizontal_line"></div>
+
+	<br>
+	<table>		
+		<tr>
+			<td class="invisible"><iframe src="https://www.youtube.com/embed/2FbDByz5f5M"frameborder="0" allowfullscreen></iframe></td>
+			<td class="invisible"> <div class="com1" align="justify"> <font size="7" color="cadetblue"> I</font>n this 22min video, you will learn how stars are born. <b>Spark</b> reveals the life of stars and what they are made of. You will find out why they appear in different colours, what their temperature reveals about their composition. </div> </td>
+		</tr>
+	</table>
+
+	<br><div class="horizontal_line"></div>
+	
+	<br>
+	<table>		
+		<tr>
+			<td class="invisible"><iframe src="https://www.youtube.com/embed/lI57XIZ17hE"frameborder="0" allowfullscreen></iframe></td>
+			<td class="invisible"> <div class="com1" align="justify"> <font size="7" color="cadetblue"> I</font>n this 16-minute video, you will learn how stars are formed.<b> Launch Pad Astronomy</b> reveals the different processes involved in star formation. </div> </td>
+		</tr>
+	</table>
+
+
+	<br>
+	<br>	
+	</div>	
+	<a href ="menu2.html" style="text-decoration: none;"> <p style=  "text-align: right;" > Here is to go to the main page </a><br><br>
+
+	<div class="horizontal_line"></div>
+
+	<marquee> For more informations another website will soon be available for the stars fans </marquee>
+	<marquee direction="right"
+		behavior="alternate">
+		</marquee>
+
+	<div id="footerContainer">
+	<p>
+	 <label>Designed by <a href="https://www.facebook.com/noemie.dussart.33/">Noemie Dussart</a></label>
+	 <span>Copyright 2022 Stars. All Rights Reserved</span>
+	</p>
+   </div>
+
+
+
+</body>
+</html>

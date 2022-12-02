@@ -1,0 +1,420 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Bookman Old Style, sans-serif;
+  overflow: hidden;
+  /*background: #111;*/
+  height: 1500px;
+}
+div{
+  box-sizing: border-box;
+}
+nav{
+  background: #333; /* color of the bar menu*/
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  color: white; /*color of the title to the left*/
+}
+.nav-links {
+    display: flex;
+    justify-content:space-around;
+    width: 50%; /*space between the menu choices*/
+    text-transform: uppercase;
+}
+.nav-links a{
+  display: block;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: white; /* color of the choices*/
+  border-bottom:2px solid transparent;
+  transition:0.5s ease; /* speed of the movement of the choices qhen click on it*/
+  transform: translateX(0%);
+}
+.nav-links a:hover{
+  color:#38b8ff; /* color of the choices when click on it*/
+  letter-spacing: 5px; /*space between the letters*/
+}
+
+
+/* color of the little menu (when the screen is on a little page)*/
+.burger div{
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+  transition:all 0.5s ease;
+}
+
+/* way to display the bar menu. It is used when the screen of the computer is about 760px*/
+@media only screen and (max-width: 760px){
+   nav{
+    justify-content: space-between;
+    padding: 0 5vw;
+ }
+ 
+/* color band when the screen is little*/
+.nav-links{
+    position: absolute;
+    right: 0;
+    top:8vh;
+    min-height:92vh;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translateX(100%);
+    transition: 0.5s ;
+  }
+  
+.nav-links a{
+    opacity: 0;
+ 
+}
+
+/*
+.burger{
+	display: none;
+}
+*/
+
+.burger{
+    display: block;
+  }
+ 
+}
+
+@media only screen and (max-width: 640px){
+  nav{
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+}
+
+.nav-active{
+  transform: translateX(0);
+}
+
+@media only screen and (max-width: 460px){
+  .nav-links{
+    width: 100%;
+    transition:All 0.5s ease;
+	}
+}
+
+.nav-active{
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade{
+	from{
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+	to{
+    opacity: 1;
+    transform: translateX(0);
+	}
+}
+
+.toggle .line1{
+   transform: rotate(-45deg) translate(-5px,6px );
+}
+
+.toggle .line2{
+   opacity: 0;
+}
+
+.toggle .line3{
+   transform: rotate(45deg) translate(-5px,-6px );
+}
+
+#carre3{
+	/*height: 190px; size*/
+	background: aliceblue; /*color*/
+}
+
+
+
+
+
+
+
+
+/***********************FROM menu_deroulant_version_assignement1.css**********************/
+
+/*container*/
+.conteneur{
+  margin: 1px 10px;
+  height: 1000px;
+}
+
+/*end ligne */
+.horizontal_line{
+	border-top: 1.5px dotted black;
+	line-height: 20%;
+	margin-left:50px;
+	margin-right: 50px; 	
+}
+
+/*End words*/
+
+#footerContainer {
+	background: whitesmoke; /* color on which the copyright is written */
+	/*height:50px;*/
+	line-height:50px; /*height of the color band*/
+	font-size:12px; /*size of the text*/
+	font-family:Georgia, "Times New Roman", Times, serif; /*police of the text*/
+	color:green; /*color of the text*/
+	
+}
+/* position of the text on the color band*/
+#footerContainer p{ /*container of the tags p */
+	margin:auto;
+	padding:0px 10px;
+}
+
+#footerContainer p label{
+	float:right;
+}
+/*color of the name of the designer*/
+#footerContainer p label a{
+	color:green;
+}
+/*color of the text when cliking one*/
+#footerContainer p label a:hover{
+	color:black;
+}
+
+
+/*the text is in the center of the page*/
+.login{
+	text-align: center;
+}
+
+/* sous comment*/
+/*size of the h2 text*/
+h2{
+	color: black;
+	margin-top:1px;
+	text-align: center
+}
+
+.com1{
+	margin-left:20px; 
+	float: right;
+}
+
+.com2{
+	margin-right:20px; 
+	float: right;
+}
+
+h7{
+	color: black;
+	margin-top:1px;
+	text-align: center;
+	font-family: Baguet Script;
+}
+	
+
+/* date website*/
+.sous_com{
+	margin-left: 20px; 
+	float: left;
+	font-size: 11.5px;
+	color: grey;
+}
+
+/*specifications of the text for the languages*/
+.langue_com{
+	margin-right: 20px; 
+	float: right;
+	font-size: 11.5px;
+	color: grey;
+}
+
+	
+/*table*/
+.invisible{
+	border: 0; /*the border are not visible*/	
+}
+
+/*citation*/
+p.quoteBar {
+	background:#F0F0F0;/*color behind the text*/
+	padding:5px;/*size of the color band*/
+	font-size:15px;/*size of the text*/
+	line-height:20px;
+	color:#3D3D3D; /*color of the text*/
+	
+	/*position of the text*/
+	margin-top:20px;
+	margin-bottom:20px;
+	font-style:italic; /*style of the text*/
+}
+
+/*marge*/
+p.marge{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.encadre{
+	margin: 30px 100px;/*position of the marges*/
+}
+
+
+/*center image*/
+.imageMarg{
+	text-align: center;
+}
+
+/*carre color*/
+#carre{
+	height: 190px; /*size*/
+	background: lavender; /*color*/
+}
+
+#carre2{
+	height: 190px; /*size*/
+	background: aliceblue; /*color*/
+}
+
+/* Principal page*/
+/* Putting text and picture next to each other*/
+/*is used to modify the dimensions of something*/
+.RecupTest{
+	display: flex;	
+}
+
+.com_1{	
+	flex: 4;
+}
+
+.com_2{	
+	flex: 30;
+}
+
+.com_3{	
+	flex: 15;
+	margin-right: 35px;
+}
+
+.com_4{
+	text-align: center;
+}
+
+.com_5{
+	flex: 2;
+}
+
+.com_6{
+	flex: 900px;
+}
+
+.com_7{
+	flex: 500px;
+}
+
+/* Contact forms for submiting a comment */
+
+.contactForm{
+	border-radius: 5px;
+	background-color: aliceblue;
+	padding: 20px;
+}
+
+
+/* Canvas part */
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+/* global marge on the page */
+.main {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+/* marge sur la page */
+.Gallery {
+  margin: 28px;
+}
+
+/* padding between each pictures*/
+.Gallery, .Gallery > .Pictures {
+  padding: 7px;
+}
+
+/* Create distinctives colums for pictures */
+.Pictures {
+  float: left;
+  width: 25%;
+}
+
+/* space between pictures */
+.Gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+#carre3{
+	/*height: 190px; size*/
+	background: aliceblue; /*color*/
+}
+
+
+ /* LOOP IMAGE */
+ 
+ #conteneur_image {
+  width: 500px;
+  height: auto;
+  position: relative;
+}
+
+#img_original {
+  width: 100%;
+  height: auto;
+}
+
+#conteneur_image:hover, #conteneur_image:active {
+  cursor: zoom-in;
+  display: block;
+}
+
+#conteneur_image:hover #img_zoom, #conteneur_image:active #img_zoom {
+  opacity: 1;
+}
+#img_zoom {
+  width: 100px;
+  height: 100px;
+  background: url(../images/carteCiel.png) no-repeat transparent;
+  box-shadow: 0 5px 5px -20px rgba(0,0,0,0.3);
+  /*pointer-events: none;*/
+  position: absolute;
+  opacity: 0;
+  border: 2px solid white;
+  z-index: 9;
+  border-radius: 50%;
+  display: block;
+  transition: opacity .2s;
+}
+

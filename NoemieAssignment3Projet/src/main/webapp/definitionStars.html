@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title>A way to cultivate yourself simply about stars</title>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="css/menu_deroulant.css"> -->
+	<link rel="stylesheet" href="css/menu_deroulant_version_assignment1.css">
+	<link rel="icon" href="images/logoEt.ico" >
+
+	<style>
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		}
+
+	h2 {
+		text-align:center;
+		font-size:130%;
+	}
+
+	h5 { 	text-align:center;
+		font-size:88%;
+	}
+
+	button { margin: 0 auto;
+		display:block;
+		 }
+
+
+	/* color of the band*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/*color of the text on the side bar*/
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* color of the test when click on it*/
+.sidebar a:hover {
+  color: white;
+}
+
+/*parameter of the "x"*/
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*size of the menu bar*/
+.openbtn {
+  font-size: 17px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+	</style>
+	</head>
+
+	<body>
+
+	<h3 style=  "text-align: center; background-color: lightblue;"> DEFINITION OF A STAR </h3><br>
+	<nav> 
+			<ul> 
+				
+				<li class="deroulant"><a href="#"> About Stars </a> 
+				<ul class="sous">
+					<li><a href="definitionStars.html">  Definition </a></li>
+					<li><a href="reality_def.html">  Stars, what are they in reality? </a></li>
+					<li><a href="tipsStars.html"> Tips </a></li>
+					<li><a href="worldOrigin.html"> World Origin </a></li>
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Examples </a>
+				<ul class="sous">
+					<li><a href="starsEx.html"> Stars  </a></li>
+					<li><a href="constellations.html"> Constellations  </a></li>
+					<!-- <li><a href="mapSky.html"> Sky Map </a></li>-->
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Quizz </a>
+			<ul class="sous">
+					<li><a href="quizz.html">  Quizz about stars, planets and universe</a></li>
+				</ul>
+	<!--		<li class="deroulant"><a href="#"> Contact us </a>
+			<ul class="sous">
+					<li><a href="contact.html"> Contact form <img src="images/mail.png" alt="Mail" class="right" width="35"/> </a></li>
+					<li><a href="#">  Instagram <img src="images/insta.png" alt="Instagram" class="right" width="25"/> </a></li>
+					<li><a href="#"> Facebook <img src="images/faceb.png" alt="Facebook" class="right" width="20"/> </a></li>
+					<li><a href="#"> LinkedIn <img src="images/ink.png" alt="LinkedIn" class="right" width="25"/> </a></li>
+				</ul>
+	-->
+
+				<li class="deroulant"><a href="canvas_sky2_jvs.html"> Profil </a></li>
+				<li class="deroulant"><a href="display.html"> Forms </a></li>
+			</ul>
+			
+		</nav>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+  <a href="menu2.html">Main page > </a>
+  <!--<a href="definitionStars.html">Definition > </a>-->
+  <a href="reality_def.html">Stars, what are they in reality? > </a>
+  <a href="tipsStars.html">Tips > </a>
+  <a href="worldOrigin.html">Wolrd Origin > </a>
+  <a href="starsEx.html">Stars > </a>
+  <a href="constellations.html">Constellations > </a>
+  <a href="quizz.html">Quizz about stars, planets and universe > </a>
+  <a href="canvas_sky2_jvs.html">Profil > </a>
+  <a href="display.html">Forms > </a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";	//size of the menu bare
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+		<br>
+
+	<img src="images/stars2.png" alt="Representation of an astre" class="center" style="width:300px; "> 
+
+	<div class="encadre" >
+
+
+	<p> <font size="7" color="maroon"> A</font> star is an astronomical object comprising a luminous spheroid of plasma held together by its gravity. The nearest star to Earth is the Sun. Many other stars are visible to the naked eye at night, but their immense distances from Earth make them appear as fixed points of light. The most prominent stars have been categorised into constellations and asterisms, and many of the brightest stars have proper names. Astronomers have assembled star catalogues that identify the known stars and provide standardized stellar designations. 
+The observable universe contains an estimated 1022 to 1024 stars. Still, most are invisible to the naked eye from Earth, including all individual stars outside our galaxy, the Milky Way.
+<br><br>A star's life begins with the gravitational collapse of a gaseous nebula of material composed primarily of hydrogen, along with helium and trace amounts of heavier elements. Its total mass is the main factor determining its evolution and eventual fate. A star shines for most of its active life due to the thermonuclear fusion of hydrogen into helium in its core. 
+This process releases energy that traverses the star's interior and radiates into outer space. At the end of a star's lifetime, its core becomes a stellar remnant: a white dwarf, a neutron star, or—if it is sufficiently massive—a black hole.
+<br><br>Stellar nucleosynthesis in stars or their remnants creates almost all naturally occurring chemical elements heavier than lithium. 
+Stellar mass loss or supernova explosions return chemically enriched material to the interstellar medium. These elements are then recycled into new stars. Astronomers can determine stellar properties—including mass, age, metallicity (chemical composition), variability, distance, and motion through space—by carrying out observations of a star's apparent brightness, spectrum, and changes in its position in the sky over time.
+Stars can form orbital systems with other astronomical objects, as in the case of planetary systems and star systems with two or more stars. When two such stars have a relatively close orbit, their gravitational interaction can significantly impact their evolution. Stars can form part of a much larger gravitationally bound structure, such as a star cluster or a galaxy.
+</p>
+
+<br>
+
+	<img src="images/funny_stars.png" alt="Representation of an astre" class="center" style="width: 300px;">
+<br>
+	<br>	
+	</div>	
+	<a href ="menu2.html" style="text-decoration: none;"> <p style=  "text-align: right;" > Here is to go to the main page </a><br><br>
+
+	<div class="horizontal_line"></div>
+
+	<marquee> For more informations another website will soon be available for the stars fans </marquee>
+	<marquee direction="right"
+		behavior="alternate">
+		</marquee>
+
+	<div id="footerContainer">
+	<p>
+	 <label>Designed by <a href="https://www.facebook.com/noemie.dussart.33/">Noemie Dussart</a></label>
+	 <span>Copyright 2022 Stars. All Rights Reserved</span>
+	</p>
+   </div>
+
+</body>
+</html>

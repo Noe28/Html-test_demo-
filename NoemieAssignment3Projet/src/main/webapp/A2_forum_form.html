@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title> A way to cultivate yourself simply about stars </title>
+	<!-- section that allow the web page to be visible on the phone as well as on a laptop-->
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" >
+	 <link rel="stylesheet" href="css/menu_deroulant_version_assignment1.css"> 
+	 <link rel="icon" href="images/logoEt.ico" > <!-- icon fot the web site -->
+
+
+	 <!-- form css -->
+	 <link rel="stylesheet" type="text/css" href="css/A2_form.css">
+
+
+
+	<style>
+
+
+/* color of the band*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/*color of the text on the side bar*/
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* color of the test when click on it*/
+.sidebar a:hover {
+  color: white;
+}
+
+/*parameter of the "x"*/
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*size of the menu bar*/
+.openbtn {
+  font-size: 17px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+</style>	
+
+	
+</head>
+
+<body>
+	
+	
+	<h1 style=  "text-align: center; background-color: lightblue; font-family: Broadway; font-size: xx-large;">  A way to cultivate yourself simply about stars</h1> 
+
+<!------------------------------------------	DYNAMIC MENU IN CSS	-->
+
+	<br>
+		<nav> 
+			<ul> 
+				
+				<li class="deroulant"><a href="#"> About Stars </a> 
+				<ul class="sous">
+					<li><a href="definitionStars.html">  Definition </a></li>
+					<li><a href="reality_def.html">  Stars, what are they in reality? </a></li>
+					<li><a href="tipsStars.html"> Tips </a></li>
+					<li><a href="worldOrigin.html"> World Origin </a></li>
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Examples </a>
+				<ul class="sous">
+					<li><a href="starsEx.html"> Stars  </a></li>
+					<li><a href="constellations.html"> Constellations  </a></li>
+					<li><a href="mapSky.html"> Sky Map </a></li>
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Quizz </a>
+			<ul class="sous">
+					<li><a href="quizz.html">  Quizz about stars, planets and universe</a></li>
+				</ul>
+	<!--		<li class="deroulant"><a href="#"> Contact us </a>
+			<ul class="sous">
+					<li><a href="contact.html"> Contact form <img src="images/mail.png" alt="Mail" class="right" width="35"/> </a></li>
+					<li><a href="#">  Instagram <img src="images/insta.png" alt="Instagram" class="right" width="25"/> </a></li>
+					<li><a href="#"> Facebook <img src="images/faceb.png" alt="Facebook" class="right" width="20"/> </a></li>
+					<li><a href="#"> LinkedIn <img src="images/ink.png" alt="LinkedIn" class="right" width="25"/> </a></li>
+				</ul>
+	------------------------------------------------------------------------------------------------------------------------------------------------->
+
+				<li class="deroulant"><a href="canvas_sky2_jvs.html"> Profil </a></li>
+				<li class="deroulant"><a href="Forms_contact.html"> Forms </a></li>
+			</ul>
+			
+		</nav>
+
+	
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+  <a href="menu2.html">Main Menu > </a>
+  <a href="definitionStars.html">Definition > </a>
+  <a href="reality_def.html">Stars, what are they in reality? > </a>
+  <a href="tipsStars.html">Tips > </a>
+  <a href="worldOrigin.html">Wolrd Origin > </a>
+  <a href="starsEx.html">Stars > </a>
+  <a href="constellations.html">Constellations > </a>
+  <a href="quizz.html">Quizz about stars, planets and universe > </a>
+  <a href="canvas_sky2_jvs.html">Profil > </a>
+  <a href="display.html">Forms > </a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";	//size of the menu bare
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<!---------------------------------------------------------->
+							<!-- FORM CONTENT STARTS HERE -->
+<!---------------------------------------------------------->
+
+<div class="conteneur"> 
+
+
+	<h3 style="font-family: Broadway; font-size: xx-large; text-align: center;"> Forum Post </h3> 
+	
+	<div class="horizontal_line"></div> <br> 
+
+
+	<!-- Forms -->
+
+<!-- elements on the form-->
+<form>
+  <h2>Forum Post</h2>
+
+  	<!-- Name -->
+  <div class="input-container">
+		<ion-icon class="icon" name="person-circle-outline"></ion-icon>
+    <input class="input-field" type="text" id="name" placeholder="Enter your name">
+  </div>
+
+  <!-- Topic -->
+  <div class="input-container">
+		<ion-icon  class="icon" name="book-outline"></ion-icon>
+    <input class="input-field" type="text" id="topic" placeholder="Enter the topic">
+  </div>
+  <!-- Post -->
+  <div class="input-container">
+		<ion-icon  class="icon" name="text-outline"></ion-icon>
+    <input class="input-field post" type="text" id="post" placeholder="Write your post here">
+  </div>
+
+  <!-- Tag -->
+  <div class="input-container">
+		<ion-icon  class="icon" name="pricetags-outline"></ion-icon>
+    <input class="input-field" type="text" id="tags" placeholder="Enter additional tags">
+  </div>
+
+  <!-- Upload File -->
+  <div class="input-container">
+		<ion-icon  class="icon" name="document-text-outline"></ion-icon>
+
+		<input class="custom-file-upload" type="file" name="inputfile" id="inputfile">
+
+  </div>
+
+  <!-- File output -->
+    <pre id="output"></pre>
+
+  <button type="submit" class="btn">Publish</button>
+
+</form>
+
+<!-- javacsript part that take the elements and display on the web the elements-->
+<script type="text/javascript">
+        document.getElementById('inputfile')
+            .addEventListener('change', function() {
+              
+            var fr=new FileReader();
+            fr.onload=function(){
+
+            	//copy text
+            	let text=fr.result;
+
+            	//split text by lines
+            	let result = text.split(/\r?\n/);
+
+            	//varaibles stock
+            	let username = result[0];
+            	let password = result[1];
+            	let email = result[2];
+
+            	//display on the web
+            	let output = "Username : "+username + " password : " + password + " email : " + email;
+
+                document.getElementById('output')
+                        .textContent=output;
+            }
+              
+            fr.readAsText(this.files[0]);//part that read a file that were put on the website
+        })
+    </script>
+
+<!-- END OF THE FORM -->
+
+<br>
+	<div class="horizontal_line"></div>
+
+	
+	<marquee> For more informations another website will soon be available for the stars fans </marquee>
+	
+
+	<div id="footerContainer"> 
+	<p>
+	 <label>Designed by <a href="https://www.facebook.com/noemie.dussart.33/">Noemie Dussart</a></label>
+	 <p>Copyright 2022 Stars. All Rights Reserved</p>
+	</p>
+   </div>
+
+  
+
+   <!-- Custom SVG icons library -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>
+
+
+		

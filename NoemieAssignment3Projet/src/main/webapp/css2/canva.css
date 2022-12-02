@@ -1,0 +1,296 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Times New Roman';
+	box-sizing: border-box;
+}
+
+.font{
+	
+	background-color: #525252;
+	
+}
+
+nav{
+	 background: #lalala;
+	 width: 100%;
+	 padding: 10px 10%;
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+	 position: relative;
+}
+
+nav ul{
+	width: 100%;
+	text-align: center;
+	
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+	font-size: 14px;
+	width: 20%;
+}
+
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 145%;
+}
+
+.sub-menu-wrap{
+	position: absolute;
+	top: 100%;
+	right: 2%;
+	width: 230px;
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.5s;
+}
+
+
+/*--------------------*/
+.sous{
+    display: none; /*hide the choices blocks*/
+    box-shadow: none; 
+    background-color: black; /*color behind the choices text*/
+    position: absolute; /*the choices are detached from the dynamic menu*/
+    width: 15%;
+    z-index: 1000; /*order of the choices*/
+	
+}
+
+nav > ul li:hover .sous{
+    display: block; /*make the choices to appear as a list*/
+	
+}
+.sous li{
+    width: 100%; /*position of the choices in the section*/
+    text-align: left; /*where the text is*/
+	font-size: 10px;
+}
+.sous a{
+    padding: 10px; /*size of the carre where the choices are*/
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none; /*allow to not have another line on the choices*/
+    background-color: RGBa(200,200,200,0.1); /*color for the dynamic choices (when the mouse went on it to choose a section)*/
+}
+.deroulant > a::after{
+    content:" ▼"; /* help to see that there is options to defile*/
+    font-size: 13px; /*size of the symbol*/
+}
+
+
+/*----------------*/
+
+/* we apply this methode to javascript*/
+.sub-menu-wrap.open-menu{
+	max-height: 400px;
+}
+	
+
+.sub-menu{
+	background: #fff;
+	padding: 20px;
+	margin: 10px;
+}
+
+.user-info{
+	display: flex;
+	align-items: center;
+}
+
+.user-info h3{
+	font-size: 500;
+}
+
+.sub-menu hr{
+	border: 0;
+	height: 1px;
+	width: 100%;
+	background: #ccc;
+	margin: 9px 0 10px;
+}
+	
+.sub-menu-link{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #525252;
+	margin: 12px 0;
+}
+
+.sub-menu-link p{
+	width: 100%;
+}
+
+.sub-menu-link span{
+	font-size: 16px;
+	transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span{
+	transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+	font-weight: 600;
+}  
+
+
+
+
+
+/*-------------------*/
+
+/* Canvas part */
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+/* global marge on the page */
+.main {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2{
+	color: black;
+	margin-top:1px;
+	text-align: center
+}
+
+h3{
+	color: black;
+}
+
+
+/* marge sur la page */
+.Gallery {
+  margin: 28px;
+}
+
+/* padding between each pictures*/
+.Gallery, .Gallery > .Pictures {
+  padding: 7px;
+}
+
+/* Create distinctives colums for pictures */
+.Pictures {
+  float: left;
+  width: 25%;
+}
+
+/* space between pictures */
+.Gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/*end ligne */
+.horizontal_line{
+	border-top: 1.5px dotted black;
+	line-height: 20%;
+	margin-left:50px;
+	margin-right: 50px; 	
+}
+
+/*End words*/
+
+#footerContainer {
+	background: whitesmoke; /* color on which the copyright is written */
+	/*height:50px;*/
+	line-height:50px; /*height of the color band*/
+	font-size:12px; /*size of the text*/
+	font-family:Georgia, "Times New Roman", Times, serif; /*police of the text*/
+	color:green; /*color of the text*/
+	
+}
+/* position of the text on the color band*/
+#footerContainer p{ /*container of the tags p */
+	margin:auto;
+	padding:0px 10px;
+}
+
+#footerContainer p label{
+	float:right;
+}
+/*color of the name of the designer*/
+#footerContainer p label a{
+	color:green;
+}
+/*color of the text when cliking one*/
+#footerContainer p label a:hover{
+	color:black;
+}
+
+
+ /* LOOP IMAGE */
+ 
+ #conteneur_image {
+  width: 500px;
+  height: auto;
+  position: relative;
+}
+
+#img_original {
+  width: 100%;
+  height: auto;
+}
+
+#conteneur_image:hover, #conteneur_image:active {
+  cursor: zoom-in;
+  display: block;
+}
+
+#conteneur_image:hover #img_zoom, #conteneur_image:active #img_zoom {
+  opacity: 1;
+}
+#img_zoom {
+  width: 100px;
+  height: 100px;
+  background: url(../images/carteCiel.png) no-repeat transparent;
+  box-shadow: 0 5px 5px -20px rgba(0,0,0,0.3);
+  /*pointer-events: none;*/
+  position: absolute;
+  opacity: 0;
+  border: 2px solid white;
+  z-index: 9;
+  border-radius: 50%;
+  display: block;
+  transition: opacity .2s;
+}
+
+.encadre{
+	margin: 30px 100px;/*position of the marges*/
+}
+
+.RecupTest{
+	display: flex;	
+}
+
+.com_1{	
+	flex: 4;
+}
+
+.com_2{	
+	flex: 100;
+}

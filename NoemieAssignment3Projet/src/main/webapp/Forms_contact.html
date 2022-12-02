@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+	<title> A way to cultivate yourself simply about stars </title>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="css/menu_deroulant_version_assignment1.css"> -->
+	<link rel="icon" href="images/logoEt.ico" > <!-- icon fot the web site -->
+
+<style>
+	body{
+		font-family: Bookman Old Style;
+		/*padding: 20px;*/
+	}
+
+	.container{
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+		
+	}
+
+	.container2{
+		text-align: left;
+	}
+
+	#carre{
+		/*height: 300px; /*size*/
+		background: lavender; /*color*/
+		margin-right: 150px;
+		margin-left: 150px;
+		/*margin-top:3px;*/
+
+	}
+
+	.table{
+		max-width: : 1000px;
+		margin: : auto;
+	}
+	
+	.row{
+		margin: 8px -16px;
+	}
+
+
+	.column{
+		float: left;
+		width: 25%;
+	}
+
+	/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/***********SIDEBAR MENU************/
+
+/* color of the band*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/*color of the text on the side bar*/
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* color of the test when click on it*/
+.sidebar a:hover {
+  color: white;
+}
+
+/*parameter of the "x"*/
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*size of the menu bar*/
+.openbtn {
+  font-size: 17px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+	
+
+</style>
+
+</head>
+
+<body>
+
+	<h1 id="registration" style="text-align: center; font-family: Broadway; background-color: lightblue;">Registration Form</h1>
+				<hr>
+
+
+<!----------SIDEBAR MENU----------->
+	
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+  <a href="menu2.html">Main page > </a>
+  <a href="definitionStars.html">Definition > </a>
+  <a href="reality_def.html">Stars, what are they in reality? > </a>
+  <a href="tipsStars.html">Tips > </a>
+  <a href="worldOrigin.html">Wolrd Origin > </a>
+  <a href="starsEx.html">Stars > </a>
+  <a href="constellations.html">Constellations > </a>
+  <a href="quizz.html">Quizz about stars, planets and universe > </a>
+  <a href="canvas_sky2_jvs.html">Profil > </a>
+  <!-- <a href="A2_register_form.html">Forms > </a> -->
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";	//size of the menu bare
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>	
+
+
+
+	<div class="container">
+			
+
+			<div class="form">
+
+				
+
+				
+				<br>
+		<div id="carre">
+				<form id="myForm">
+
+
+					<label for="fname"><b>First Name</b></label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name.."  onfocus="this.style.backgroundColor='white'" onblur="this.style.backgroundColor='white'" >
+					<br><br>
+
+					<label for="lname"><b>Last Name</b></label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name.."  onfocus="this.style.backgroundColor='white'" onblur="this.style.backgroundColor='white'">
+					<br><br>
+
+					<label for="age"><b>Age</b></label>
+					<input type="number" id="age" min="10" max="100" name="number-of-color" placeholder="Your age.."  onfocus="this.style.backgroundColor='white'" onblur="this.style.backgroundColor='white'">
+					<br><br>
+
+					<label for="email"><b>EMail</b></label>
+					<input type="text" id="email" name="email" required pattern="[name@dcu.ie]" placeholder="Your email.."  onfocus="this.style.backgroundColor='white'" onblur="this.style.backgroundColor='white'">
+					<br><br>
+
+					<label for="country"><b>Country</b></label>
+					<select id="country" name="country">
+						<option value="australia">Australia</option>
+						<option value="canada">Canada</option>
+						<option value="France">France</option>
+						<option value="Germany">Germany</option>
+						<option value="Spain">Spain</option>
+						<option value="USA">USA</option>
+						<option value="Italia">Italia</option>
+						<option value="Irland">Irland</option>
+						<option value="Sweden">Sweden</option>
+						<option value="Switzerland">Switzerland</option>
+					</select>
+					<br><br>
+
+				<!--	<label for="gender">Gender:: </label>
+					<select id="gender" name="gender">									
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="other">Other</option>
+					</select>
+				-->
+
+					<label><b>Gender</b> </label>
+					<div class="form-inline">
+						<label><input type="radio" name="gender[]" value="Male">Male</label>
+						<label><input type="radio" name="gender[]" value="Female">Female</label>
+						<label><input type="radio" name="gender[]" value="Other">Other</label>
+					</div>
+
+					<br>
+
+					<label><b>Hobbies </b></label>
+					<div class="form-inline">
+						<label><input type="radio" name="hobbies[]" value="Sport">Sport</label>
+						<label><input type="radio" name="hobbies[]" value="Movies">Movies</label>
+						<label><input type="radio" name="hobbies[]" value="Music">Music</label>
+						<label><input type="radio" name="hobbies[]" value="Civile protection">Civile protection</label>
+						<label><input type="radio" name="hobbies[]" value="Running">Running</label>
+						<label><input type="radio" name="hobbies[]" value="Traveling">Traveling</label>
+						<label><input type="radio" name="hobbies[]" value="Writing">Writing</label>
+						<label><input type="radio" name="hobbies[]" value="Teaching">Teaching</label>
+						<label><input type="radio" name="hobbies[]" value="Reading">Reading</label>
+					</div>
+
+					<br>
+
+					<label><b>Did you know about stars before? </b></label>
+					<div class="form-inline">
+						<label><input type="radio" name="know[]" value="Yes">Yes</label>
+						<label><input type="radio" name="know[]" value="No">No</label>
+						<label><input type="radio" name="know[]" value="A little">A little</label>
+					</div>
+
+					<br>
+
+					<label><b>Website Grade /3</b></label>
+					<div class="form-inline">
+						<label><input type="radio" name="grade[]" value="3">3</label>
+						<label><input type="radio" name="grade[]" value="2">2</label>
+						<label><input type="radio" name="grade[]" value="1">1</label>
+					</div>
+
+					<br>
+
+					<label><b>Datetime-local</b></label>
+					<div class="form-inline">
+						<label><input type="datetime-Local" name="meeting" id="datetimeLocal" ></label>
+					</div>
+
+					<br>
+
+					<label><b>Password</b></label>
+					<!-- <div class="form-inline"> -->
+						<label> <input type="password" name="password" id="password" minlength="6" required placeholder="6 characters minimum"></label>
+
+					<br><br>
+
+
+
+					<input type="button" value="Submit" id="btn" >
+					
+				</form>
+			</div>	<!--end of form -->
+				<br>
+			
+			<div class="table">
+
+				<div class="row">
+					<div class="column">
+
+						<div class="card">
+						<img src="female_avatar.png" width="30px">
+							<div class="student-details">
+								<div class="std-name">Noémie Dussart </div>
+								<div class="std-age">19</div>
+								<div class="std-email"><i>nono@dcu.ie</i></div>
+								<div class="std-country">France</div>
+								<div class="std-gender">Female</div>
+								<div class="std-hobbies">Reading</div>
+								<div class="std-know"> A little </div>
+								<div class="std-grade"> 2/3 </div>
+								<div class="std-datetimeLocal"> 2022-10-24T00:03</div>
+								<div class="std-password"> Supernova </div>
+							</div>
+							<div class="div-remove-card">
+								<button class="remove-card">--------------</button>
+							</div>
+						</div><!--card-->
+					</div><!--column-->
+										
+				
+					<div class="column">
+
+						<div class="card">
+						<img src="female_avatar.png" width="30px">
+							<div class="student-details">
+								<div class="std-name">Justine Marret </div>
+								<div class="std-age">20</div>
+								<div class="std-email"><i>juju@dcu.ie</i></div>
+								<div class="std-country">France</div>
+								<div class="std-gender">Female</div>
+								<div class="std-hobbies">Civile protection</div>
+								<div class="std-know"> Yes </div>
+								<div class="std-grade"> 3/3 </div>
+								<div class="std-datetimeLocal"> 2022-10-17T13:40</div>
+								<div class="std-password"> Mercures </div>
+							</div>
+							<div class="div-remove-card">
+								<button class="remove-card">--------------</button>
+							</div>
+						</div><!--card-->
+					</div><!--column-->
+
+					<div class="column">
+
+						<div class="card">
+						<img src="images/male_avatar2.png" width="32px">
+							<div class="student-details">
+								<div class="std-name">Thomas Beghini </div>
+								<div class="std-age">19</div>
+								<div class="std-email"><i>toto@dcu.ie</i></div>
+								<div class="std-country">France</div>
+								<div class="std-gender">Male</div>
+								<div class="std-hobbies">Running</div>
+								<div class="std-know"> No </div>
+								<div class="std-grade"> 1/3 </div>
+								<div class="std-datetimeLocal"> 2022-10-09T09:20</div>
+								<div class="std-password"> SkyDiving </div>
+							</div>
+							<div class="div-remove-card">
+								<button class="remove-card">--------------</button>
+							</div>
+						</div><!--card-->
+					</div><!--column-->
+
+					<div class="column">
+
+						<div class="card">
+						<img src="images/male_avatar2.png" width="32px">
+							<div class="student-details">
+								<div class="std-name">Adrien Smith </div>
+								<div class="std-age">21</div>
+								<div class="std-email"><i>ade@dcu.ie</i></div>
+								<div class="std-country">France</div>
+								<div class="std-gender">Male</div>
+								<div class="std-hobbies">Sport</div>
+								<div class="std-know"> A little </div>
+								<div class="std-grade"> 3/3 </div>
+								<div class="std-datetimeLocal"> 2022-09-28T17:13</div>
+								<div class="std-password"> Interstellar </div>
+							</div>
+							<div class="div-remove-card">
+								<button class="remove-card">--------------</button>
+							</div>
+						</div><!--card-->
+					</div><!--column-->
+
+
+
+				
+				</div><!--row-->
+
+
+
+
+			</div><!--table-->
+
+
+
+
+		</div><!-- carre-->
+	</div><!--container-->	
+
+
+<div class="container2">
+	<br>
+	<div class="row">
+		<div class="column">
+		</div><!--column-->
+	</div><!--row-->
+</div><!--container2-->
+
+<script>
+
+
+
+//1. 
+//displaying element by a div element
+let div = document.createElement('div');
+div.classList.add('student-list');
+let containerDic=document.querySelector('.container2', '.row', '.column');
+containerDic.appendChild(div);
+
+//2.
+//submission of the elements by clicking on the button 
+let submitBtn =document.getElementById('btn');
+submitBtn.addEventListener('click', displayStudentDetail);
+
+
+
+
+//3.
+function displayStudentDetail(){
+
+	//alert("Teeeeeeeeeeeest");
+
+	//lines that collect the entering elemenst	
+		
+
+	let fname =document.getElementById('fname').value;
+	
+	let lname =document.getElementById('lname').value;
+	let age=document.getElementById("age").value;
+	let email = document.getElementById('email').value;
+	let country=document.querySelector('#country').value;
+	//let gender=document.querySelector('#gender').value;
+
+	let gender=document.querySelector('input[name="gender[]"]:checked').value;
+
+	let hobbies=document.querySelector('input[name="hobbies[]"]:checked').value;	
+
+	let grade=document.querySelector('input[name="grade[]"]:checked').value;
+
+	let know=document.querySelector('input[name="know[]"]:checked').value;
+
+	let datetimeLocal=document.getElementById('datetimeLocal').value;
+	let password=document.getElementById('password').value;
+	
+
+	let html = `<br><br><div class="card">
+					
+							<div class="student-details">
+								<div class="std-name">${fname} ${lname} </div>
+								<div class="std-age">${age}</div>
+								<div class="std-email"><i>${email}</i></div>
+								<div class="std-country">${country}</div>
+								<div class="std-gender">${gender}</div>
+								<div class="std-hobbies">${hobbies}</div>
+								<div class="std-hobbies">${grade}/3</div>
+								<div class="std-hobbies">${know}</div>
+								<div class="std-datetime-local">${datetimeLocal}</div>
+								<div class="std-password">${password}</div>
+							</div>
+							<br>
+							<div class="div-remove-card">
+								<button class="remove-card">--------------</button>
+							</div>
+				</div>`;
+
+		div.insertAdjacentHTML('beforebegin', html); /*beforebegin*/
+
+		document.getElementById("myForm").reset();
+
+}
+
+function ValiderMail(formulaire) {
+      if (formulaire.email.value.indexOf("@dcu.ie",0)<0) {alert("Enter a valid e-mail address from the type name@dcu.ie.\nThe form is not valid.")
+      	return false;
+  }
+      else {
+         alert("Validate Email Form.");
+      }
+   }
+
+
+   email.addEventListener("input", (event)=>{
+   	if(email.validity.typeMismacht){
+   		email.setCustomValidity("I expecte an @dcu.ie email");
+   		email.reportValidity();
+   	}
+   	else{
+   		email.setCustomValidity("");
+   	}
+   });
+
+
+</script>
+<br>
+
+ 
+
+</form>
+
+		
+
+</body>
+
+</html>
+

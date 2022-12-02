@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title> A way to cultivate yourself simply about stars</title>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/menu_deroulant.css">
+	<link rel="icon" href="images/logoEt.ico" >
+
+	<style>
+		table{
+				border: 1px solid black;
+				border-collapse: collapse;
+				align-items: center;
+				/*width: 100%*/
+				/*margin-left: 350px;*/
+			}
+
+		td, th{
+				border: thin solid;
+			}
+
+
+	
+	/* color of the band*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/*color of the text on the side bar*/
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* color of the test when click on it*/
+.sidebar a:hover {
+  color: white;
+}
+
+/*parameter of the "x"*/
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*size of the menu bar*/
+.openbtn {
+  font-size: 17px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+</style>
+	
+
+</head>
+
+<body>
+	
+	<h3 style=  "text-align: center; background-color: lightblue;">  What Stars are in reality  </h3><br>
+	<nav> 
+			<ul> 
+				
+				<li class="deroulant"><a href="#"> About Stars </a> 
+				<ul class="sous">
+					<li><a href="definitionStars.html">  Definition </a></li>
+					<li><a href="reality_def.html">  Stars, what are they in reality? </a></li>
+					<li><a href="tipsStars.html"> Tips </a></li>
+					<li><a href="worldOrigin.html"> World Origin </a></li>
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Examples </a>
+				<ul class="sous">
+					<li><a href="starsEx.html"> Stars  </a></li>
+					<li><a href="constellations.html"> Constellations  </a></li>
+					<!--<li><a href="mapSky.html"> Sky Map </a></li>-->
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#"> Quizz </a>
+			<ul class="sous">
+					<li><a href="quizz.html">  Quizz about stars, planets and universe</a></li>
+				</ul>
+	<!--		<li class="deroulant"><a href="#"> Contact us </a>
+			<ul class="sous">
+					<li><a href="contact.html"> Contact form <img src="images/mail.png" alt="Mail" class="right" width="35"/> </a></li>
+					<li><a href="#">  Instagram <img src="images/insta.png" alt="Instagram" class="right" width="25"/> </a></li>
+					<li><a href="#"> Facebook <img src="images/faceb.png" alt="Facebook" class="right" width="20"/> </a></li>
+					<li><a href="#"> LinkedIn <img src="images/ink.png" alt="LinkedIn" class="right" width="25"/> </a></li>
+				</ul>
+	-->
+
+				<li class="deroulant"><a href="canvas_sky2_jvs.html"> Profil </a></li>
+				<li class="deroulant"><a href="display.html"> Forms </a></li>
+			</ul>
+			
+		</nav>
+		<br>
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+  <a href="menu2.html">Main page > </a>
+  <a href="definitionStars.html">Definition > </a>
+  <!-- <a href="reality_def.html">Stars, what are they in reality? > </a>-->
+  <a href="tipsStars.html">Tips > </a>
+  <a href="worldOrigin.html">Wolrd Origin > </a>
+  <a href="starsEx.html">Stars > </a>
+  <a href="constellations.html">Constellations > </a>
+  <a href="quizz.html">Quizz about stars, planets and universe > </a>
+  <a href="canvas_sky2_jvs.html">Profil > </a>
+  <a href="display.html">Forms > </a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";	//size of the menu bare
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+	<br>
+
+	<div class="encadre" >
+		
+
+	<p style="text-align: center"> We won't go into details, my only goal is to help you understand what the little lights you see in the sky at night are.</p>
+
+	<br><br>
+	<p align="justify"><font size="7" color="cadetblue">S</font>tar formation is due to the collapse of a gas cloud and its possible fragmentation into several protostars, which heat up as they contract. A gas cloud, composed of gas and dust, is the medium from which solar systems are born, and is mainly composed of hydrogen and helium, of which a star is essentially composed. The temperature then reaches such a value that the core "ignites": the hydrogen fuses into helium, providing the energy that stops the collapse. The star then enters the main sequence in which it spends most of its life.</p><br>
+	<p align="justify"> A star is therefore a sphere of plasma, this shape of sphere is due to gravity, they are therefore essentially composed of hydrogen and helium, a gaseous celestial body, in rotation on itself. But yes, obviously, a star does not walk around like a planet around the Sun for example, they stay nicely in their place. Why do they do this?</p><br>
+	<p align="justify"> Let's take the Sun as an example, the Sun as everyone knows, I presume, is a star, we on Earth and the other planets revolve around it while it revolves around itself quietly. But in fact, in spite of what we can believe, the stars and the Sun also move, but we do not see it, the distance between the stars and us is so important, that we could believe, as a simple beginner observer, that the stars do not move but rather that it is us in relation to the rotation of the Earth on itself and around the Sun that makes the stars move, It's true, as the Earth moves, so do the stars and everything else in the sky, except the North Star, which is in the axis of rotation of the Earth, which gives us the impression that the stars rotate around it.</p><br>
+
+	<div class="imageMarg"><img src="images/rotation_etoiles.png" alt="Representation of an astre" class="center" style="width: 300px;"/></div> <br><br>
+
+	<p align="justify"> But a star moves by itself as well. For the sun, because we ourselves revolve around it, it is impossible for us to see it moving, more precisely, the whole solar system moves with the sun around the galactic centre, including everything in our Galaxy.</p><br>
+
+	<div class="imageMarg"><img src="images/lactee.png" alt="Representation of an astre" class="center" style="width: 300px;"/></div> <br><br>
+
+	<p align="justify"> As shown in the image above, our solar system revolves around the centre of the Milky Way, so the few stars visible to us also revolve around this centre, the Galactic Centre.</p><br>
+
+	<p align="justify">But where does the light from a star come from? The light it emits and which reaches us is due to nuclear fusion reactions in its core. The light emitted by a star has a long way to go to reach us, the further away a star is, the longer it takes for its light to reach us, it is even possible that on earth we still see the light of some stars, even though they are "dead".</p><br>
+
+	<p align="justify">Yes, a star evolves, grows, and then dies...</p><br>
+
+	<div class="imageMarg"><img src="images/classEt.png" alt="Representation of an astre" class="center" style="width: 300px; "/> </div><br><br>
+
+	<p align="justify"> The more massive a star is, the faster it consumes its hydrogen, e.g. the sun, a star like the sun has a lifetime of about 10 billion years, so a large star will be very bright, but will have a short lifetime. When nuclear fuel, usually hydrogen, becomes too scarce in the star's core, fusion reactions stop. The pressure created by these reactions no longer compensates for the gravitational forces and the star collapses in on itself. It is at this moment that an explosion is formed, which is called a supernova or hypernova, depending on the mass of the star. Also planetary nebula, it all depends on the type of star.</p><br>
+
+
+
+	
+	<table>
+  
+   <caption> Result after an explosion </caption><br> <!-- is used as a title which is "glue" to the table -->
+   <tr>
+
+  	<th>Name of the type</th>
+
+  	<th>Image</th>
+
+  	</tr>
+
+ 	<tr>
+   		<td>  <img src="images/supernova.png" alt="Supernova" class="center" style="width: 300px;"/> </td>
+   		<td>Supernova</td>
+  	</tr>
+  
+  	<tr>
+   		<td> <img src="images/trou_noir.png" alt="Trou Noir" class="center" style="width: 300px;"/> </td>
+   		<td> Trou Noir</td>
+  	</tr>
+
+
+	</table>
+
+</div>
+
+
+	<br>
+
+
+<a href ="menu2.html" style="text-decoration: none;"> <p style=  "text-align: right;" > Here is to go to the main page </a><br><br>
+
+	<div class="horizontal_line"></div>
+
+	<marquee> For more informations another website will soon be available for the stars fans </marquee>
+	<marquee direction="right"
+		behavior="alternate">
+		</marquee>
+
+	<div id="footerContainer">
+	<p>
+	 <label>Designed by <a href="https://www.facebook.com/noemie.dussart.33/">Noemie Dussart</a></label>
+	 <span>Copyright 2022 Stars. All Rights Reserved</span>
+	</p>
+   </div>
+ 
+	
+
+</body>
+</html>

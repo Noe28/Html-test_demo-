@@ -1,0 +1,65 @@
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+
+  margin: 5px;
+  border-radius: 5px;
+  padding: 10px ;
+  background: #add8e6;
+  color: white;
+  max-width: 50px;
+  text-align: center;
+}
+
+ion-icon{
+  font-size: 2em;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+
+}
+
+.post{
+  height: 300px;
+  justify-content: flex-start;
+}
+
+.input-field:focus {
+  border: 2px solid #add8e6;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #add8e6;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+/* FILE UPLOAD */
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
